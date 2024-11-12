@@ -55,13 +55,6 @@ struct TodoListView: View {
                         }
                         
                     }
-                List(items) { currentItem in
-                    Label {
-                        Text(currentItem.details)
-                    } icon: {
-                        Image(systemName: currentItem.isCompleted ? "checkmark.circle" : "circle")
-                    }
-                }
             }
             .navigationTitle("Tasks")
         }
