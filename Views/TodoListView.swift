@@ -11,6 +11,8 @@ struct TodoListView: View {
     
     // MARK: Stored properties
     
+    // The item currently being created
+    @State private var newItemDetails = ""
     // Our list of items to complete
     @State private var items: [TodoItem] = []
     
@@ -18,6 +20,18 @@ struct TodoListView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                
+                HStack {
+                    
+                    TextField("Enter a to-do item", text: $newItemDetails)
+                    
+                    Button("Add") {
+                        addItem()
+                    }
+                 
+                }
+                .padding(20)
+                
                 if items.isEmpty {
                         
                         ContentUnavailableView(label: {
@@ -59,7 +73,16 @@ struct TodoListView: View {
         }
     }
     
+    // MARK: Functions
+    func addItem() {
+        let newToDoItem = TodoItem(details: newItemDetails)
+        items.insert(newToDoItem, at: 0)
+        newItemDetails = ""
+    }
+    
 }
+
+
 
 #Preview {
     TodoListView()
