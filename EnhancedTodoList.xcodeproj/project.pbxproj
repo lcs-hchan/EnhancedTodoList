@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BCF996952CE3B91A00837E03 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF996942CE3B91A00837E03 /* LandingView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BCF9967D2CE3B85200837E03 /* EnhancedTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnhancedTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF996942CE3B91A00837E03 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,8 @@
 		BCF996742CE3B85200837E03 = {
 			isa = PBXGroup;
 			children = (
+				BCF996972CE3B95600837E03 /* Model */,
+				BCF996962CE3B94800837E03 /* Views */,
 				BCF9967F2CE3B85200837E03 /* EnhancedTodoList */,
 				BCF9967E2CE3B85200837E03 /* Products */,
 			);
@@ -43,6 +50,21 @@
 				BCF9967D2CE3B85200837E03 /* EnhancedTodoList.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF996962CE3B94800837E03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF996942CE3B91A00837E03 /* LandingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF996972CE3B95600837E03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF996952CE3B91A00837E03 /* LandingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
