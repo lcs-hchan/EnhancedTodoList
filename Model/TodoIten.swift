@@ -4,13 +4,14 @@
 //
 //  Created by hayden on 2024-11-12.
 //
-import Observation
-import Foundation
 
-@Observable
-class TodoItem: Identifiable {
-    
-    let id = UUID()
+import Foundation
+import SwiftData
+
+
+@Model
+class TodoItem {
+
     var details: String
     let createdOn: Date
     var isCompleted: Bool
